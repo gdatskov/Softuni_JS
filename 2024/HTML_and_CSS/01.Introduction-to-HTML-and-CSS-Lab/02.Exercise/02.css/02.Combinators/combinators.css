@@ -1,0 +1,21 @@
+div p {
+    color: blue;
+}
+
+p + p {
+    color: indigo;
+    background-color: lightgray;
+}
+
+span {
+    color: red;
+}
+
+p ~ span {
+    font-weight: bolder;
+}
+
+ul > li {
+    list-style-type: circle;
+}
+

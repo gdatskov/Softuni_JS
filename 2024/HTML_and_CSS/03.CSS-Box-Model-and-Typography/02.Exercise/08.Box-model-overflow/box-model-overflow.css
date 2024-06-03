@@ -1,0 +1,21 @@
+div {
+    width: 300px;
+    margin-bottom: 20px;
+    max-height: 150px;
+}
+
+p {
+    border: 2px solid lightgray;
+}
+
+div.overflow-visible {
+    overflow: visible;
+}
+
+div.overflow-hidden {
+    overflow: hidden;
+}
+
+div.overflow-scroll {
+    overflow: scroll;
+}

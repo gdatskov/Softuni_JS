@@ -1,0 +1,52 @@
+p.highlighted-paragraph {
+    color: lightblue;
+    font-size: larger;
+}
+
+div#special-div {
+    background-color: orange;
+    padding: 10px;
+}
+
+input[type="text"].specific-class {
+    border-color: saddlebrown;
+    padding: 20px;
+}
+
+li.item-1 {
+    color: aqua;
+}
+
+li.item-2 {
+    font-weight: bold;
+}
+
+li.item-3 {
+    font-weight: bolder;
+    color: red;
+    font-style: italic;
+}
+
+a[href="https://softuni.bg/"] {
+    color: orange;
+    text-decoration-style: double;
+}
+a[href="#"] {
+    font-weight: bold;
+}
+
+.boldclass {
+    font-weight: bold;
+}
+
+.blueclass {
+    color: lightblue;
+}
+
+.italicclass {
+    font-style: italic;
+}
+
+.subtitle.fancy {
+    color: blue;
+}

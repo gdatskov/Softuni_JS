@@ -1,0 +1,21 @@
+div {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #333;
+    margin-bottom: 20px;
+    background: #eee;
+
+}
+
+p {
+    border: 2px solid lightgray;
+}
+
+div.content-box {
+    box-sizing: content-box;
+}
+
+div.border-box {
+    box-sizing: border-box;
+}
+

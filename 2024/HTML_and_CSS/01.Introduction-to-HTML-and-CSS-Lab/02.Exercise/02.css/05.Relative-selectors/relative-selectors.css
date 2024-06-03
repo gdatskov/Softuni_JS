@@ -1,0 +1,36 @@
+section > p {
+    color: green;
+}
+article p {
+    color: lightblue;
+}
+
+.highlight p {
+    background-color: indigo;
+}
+
+.highlight + article {
+    background-color: black;
+}
+
+ul.special {
+    list-style: none;
+    font-weight: bold;
+}
+
+ul.special > li:nth-child(2) {
+    color: red;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+ul li :nth-child(3) a {
+    color: green;
+}
+
+
+h2 ~ p {
+    color: darkgoldenrod;
+}
