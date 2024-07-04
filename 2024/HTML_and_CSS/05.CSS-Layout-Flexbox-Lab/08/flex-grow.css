@@ -1,0 +1,24 @@
+.flex-container {
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.flex-grow-default .flex-item {
+    flex-grow: 0;
+}
+.flex-grow-one .flex-item {
+    flex-grow: 1;
+}
+.flex-grow-2nd-child .flex-item:nth-child(2) {
+    flex-grow: 1;
+}
+.flex-grow-proportional .flex-item{
+    flex-grow: 1;
+}
+.flex-grow-proportional .flex-item:nth-child(2) {
+    flex-grow: 2;
+}
+.flex-grow-proportional .flex-item:nth-child(3) {
+    flex-grow: 3;
+}
+

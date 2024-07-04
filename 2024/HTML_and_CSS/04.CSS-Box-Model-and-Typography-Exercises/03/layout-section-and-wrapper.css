@@ -1,0 +1,19 @@
+body {
+    border: 2px solid green;
+    margin: 1em;
+}
+
+header, div, article, footer {
+    border: 2px solid black;
+    margin: 1em;
+}
+
+footer {
+    margin-bottom: 2em;
+}
+
+p {
+    border: 2px solid blue;
+    margin: 1em 4em;
+    padding: 1em;
+}

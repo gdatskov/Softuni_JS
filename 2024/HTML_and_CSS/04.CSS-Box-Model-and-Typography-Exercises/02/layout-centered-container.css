@@ -1,0 +1,15 @@
+html {
+    border: 2px solid green;
+    margin: 1em;
+    text-align: center;
+}
+
+body {
+    border: 2px solid blue;
+    margin: 1em;
+}
+
+header, main, footer {
+    border: 2px solid black;
+    margin: 1em;
+}

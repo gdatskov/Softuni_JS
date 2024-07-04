@@ -1,0 +1,39 @@
+div {
+    border: 2px dashed #6e6e6e;
+    margin: 2em;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.margin {
+    background-color: #ff966f;
+    width: 600px;
+    margin-inline: auto;
+    
+}
+
+.border {
+    background-color: #ffe8c6;
+
+}
+
+.padding {
+    background-color: #85eb85;
+
+}
+
+.content {
+    background-color: #a3d2e2;
+    text-align: center;
+}
+
+p {
+    margin: 0 0 0 0.5em;
+    position: absolute;
+
+}
+
+.content p {
+    margin: 1em 0;
+    position: relative;
+}

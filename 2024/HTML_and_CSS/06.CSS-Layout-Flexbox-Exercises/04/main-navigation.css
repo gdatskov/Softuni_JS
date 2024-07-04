@@ -1,0 +1,246 @@
+/* header {
+    display: flex;
+    background-color: #eee;
+    border: 2px solid #D5D5D5;
+    margin: 1em;
+    padding: 0.25em;
+    box-shadow: 0 0 15px #CCC;
+    border-radius: 5px;
+    font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+a {
+    background-color: white;
+    border: 2px solid #D5D5D5;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    color: orange;
+    text-decoration: none;
+} 
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 1em;
+    border: 1px solid black;
+}
+
+nav ul ul {
+    list-style: none;
+    display: none;
+}
+
+ a:hover {
+    background-color: orange;
+    color: white;
+}
+
+li:hover > ul {
+    border: 2px solid black;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    margin-left: 0;
+}
+
+ul ul li {
+    padding: 1em 0;
+}
+
+ul ul li a {
+    color: black;
+} */
+
+/* ----------------------- */
+/*
+header {
+    display: flex;
+    background-color: #eee;
+    border: 2px solid #D5D5D5;
+    margin: 1em;
+    padding: 0.25em;
+    box-shadow: 0 0 15px #CCC;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+a {
+    background-color: white;
+    border: 2px solid #D5D5D5;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    color: orange;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > ul > li {
+    position: relative;
+}
+
+li {
+    margin: 1em 0;
+}
+
+ul ul li {
+    margin-top: 2em;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    /* background-color: white; */
+    /* border: 1px solid #D5D5D5; *//*
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+ul ul ul {
+    left: 100%;
+    top: 0;
+    width: 100%;
+}
+
+nav ul li:hover > ul {
+    display: block;
+    min-width: 100%;
+}
+
+nav ul li:hover > ul li a{
+    align-items: stretch;
+    align-content: stretch;
+    flex-grow: 1;
+    
+}
+
+nav ul li a:hover {
+    background-color: orange;
+    color: white;
+}
+
+nav ul ul li a {
+    padding: 0.5em 1em;
+    color: black;
+    white-space: nowrap;
+}
+
+nav ul ul li a:hover {
+    background-color: orange;
+    color: white;
+}
+*/
+header {
+    display: flex;
+    background-color: #eee;
+    border: 2px solid #D5D5D5;
+    margin: 1em;
+    padding: 0.25em;
+    box-shadow: 0 0 15px #CCC;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+a {
+    background-color: white;
+    border: 2px solid #D5D5D5;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    color: orange;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 1em 0;
+}
+
+
+.menu > ul > li {
+    position: relative; /* Ensure submenus are positioned correctly */
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    border: 1px solid #D5D5D5;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%; /* Ensure submenu items stretch to match the longest item */
+}
+
+nav ul ul ul {
+    left: 100%;
+    top: 0;
+    width: 100%; /* Ensure nested submenu items stretch to match the longest item */
+}
+
+nav ul li:hover > ul {
+    display: block; /* Show the submenu on hover */
+    min-width: 100%; /* Ensure the submenu is as wide as the parent */
+}
+
+nav ul li a:hover {
+    background-color: orange;
+    color: white;
+}
+
+nav ul ul li a {
+    padding: 0.5em 1em;
+    color: black;
+    border: none;
+    white-space: nowrap; /* Prevent text wrapping */
+    display: block; /* Make anchor elements block to fill the container */
+}
+
+nav ul ul li a:hover {
+    background-color: orange;
+    color: white;
+}
+
+nav ul ul {
+    width: auto;
+    min-width: 200px;
+}
+
+.menu ul ul {
+    display: none; /* Hide sub-menus by default */
+}
+
+.menu ul li:hover > ul {
+    display: block;
+    /* width: 100%; */
+    margin-top: 0.5em;
+    margin-left: 0.25em;
+}
+
+
+.menu ul ul li {
+    width: 100%;
+    position: relative;
+}

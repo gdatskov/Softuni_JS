@@ -1,0 +1,13 @@
+.flex-shrink-default .flex-item{
+    flex-shrink: 1;
+}
+.flex-shrink-zero .flex-item {
+    flex-shrink: 0;
+}
+.flex-shrink-2nd-child .flex-item:nth-child(2) {
+    flex-shrink: 0;
+}
+
+.flex-item {
+    flex-basis: 300px;
+}

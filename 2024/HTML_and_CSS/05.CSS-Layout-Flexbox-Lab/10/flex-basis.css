@@ -1,0 +1,20 @@
+.flex-basis-5em * {
+    flex-basis: 5em;
+}
+
+.flex-basis-shrink-zero * {
+    flex-basis: 5em; 
+    flex-shrink: 0; 
+    max-width: 5em
+}
+
+.flex-grow-one * {
+    flex-basis: 5em; 
+    flex-grow: 1;
+    min-width: 5em
+}
+
+.flex-grow-one {
+    width: 900px;
+
+}

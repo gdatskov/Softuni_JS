@@ -1,0 +1,18 @@
+.flex-container {
+    border: 2px solid green;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.item {
+    margin: 1em;
+    padding: 1em;
+    outline: 2px solid blue;
+}
+
+main.item {
+    flex-grow: 1;
+}
