@@ -11,39 +11,32 @@ function solve() {
    class Restaurant {
       constructor(restaurantName, ...restaurantEmployees) {
          this.name = restaurantName;
-         this.employees = restaurantEmployees;
+         this.employees = restaurantEmployees.reduce((obj, employee) => {
+            obj[employee.name] = employee;
+            return obj;
+        }, {});
       }
 
       get averageSalary() {
-         const totalEmployees = this.employees.length
-         const totalSalary = this.employees.reduce((sum, employee) => sum + employee.salary, 0);
-         const average = totalSalary/totalEmployees
-         return average
-      }
-
-      // // Deprecated since a sorting method was created
-      // get maxSalaryEmployee() {
-      //    const maxEmployee = this.employees.reduce(
-      //       (employeeWithBestSalary, employee) => {
-      //       return (employee.salary > employeeWithBestSalary.salary) ? employee : employeeWithBestSalary;
-      //       }, 
-      //       {salary: -Infinity}
-      //    );
-      //    return maxEmployee
-      // }
-      
+         const employeeArray = Object.values(this.employees);
+         const totalEmployees = employeeArray.length;
+         const totalSalary = employeeArray.reduce((sum, employee) => sum + employee.salary, 0);
+         return totalEmployees ? totalSalary / totalEmployees : 0;
+     }
+ 
       get sortedEmployees() {
-         const employees = Array.from(this.employees);
-         
-         const sorted = employees.sort((employeeA, employeeB) => {
-            return employeeB.salary - employeeA.salary;
-         });
-         
-         return sorted;
+            const employeeArray = Object.values(this.employees);
+            return employeeArray.sort((employeeA, employeeB) => employeeB.salary - employeeA.salary);
+      }
+ 
+      get maxSalaryEmployee() {
+            return this.sortedEmployees[0];
       }
 
-      get maxSalaryEmployee() {
-         return this.sortedEmployees[0]
+      updateEmployees (employeesToUpdate) {
+         for (const employeeName in employeesToUpdate) {
+            this.employees[employeeName] = employeesToUpdate[employeeName];
+        }
       }
    }
    
@@ -73,7 +66,13 @@ function solve() {
 
          // Create Restaurant class object with restaurant name and Employee objects
          restaurant = new Restaurant(restaurantName, ...employeeList);
-         restaurants[restaurant.name] = restaurant;
+
+         // Check if restaurant is already added and update the employees instead
+         if (restaurantName in restaurants) {
+            restaurants[restaurantName].updateEmployees(restaurant.employees);
+         } else {
+            restaurants[restaurant.name] = restaurant;
+         }
       };
 
       // Get the restaurant with the best average salary
