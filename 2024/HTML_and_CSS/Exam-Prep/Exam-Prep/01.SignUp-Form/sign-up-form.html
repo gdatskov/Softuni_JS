@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="sign-up-form.css">
+</head>
+<body>
+    <form action="#">
+            <nav>
+                <button type="button">Sign Up</button>
+                <button type="button" class="inactive-button">Log In</button>
+            </nav>
+
+            <header>
+                <h1>Sign Up for free</h1>
+            </header>
+
+            <div class="field">
+                <div class="fullname">
+                    <div class="input-wrapper">
+                        <input type="text" name="first-name" id="first-name" required>
+                        <label for="first-name">First Name</label>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" name="last-name" id="last-name" required>
+                        <label for="last-name">Last Name</label>
+                    </div>
+                </div>
+            
+                <div class="input-wrapper">
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">Email Address</label>
+                </div>
+                
+                <div class="input-wrapper">
+                    <input type="password" name="password" id="password">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+
+            <button type="submit" class="big-button">
+                <p>GET STARTED</p>
+            </button>
+
+    </form>
+</body>
+</html>

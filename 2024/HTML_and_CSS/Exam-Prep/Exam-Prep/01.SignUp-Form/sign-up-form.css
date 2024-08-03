@@ -1,0 +1,95 @@
+@import 'https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap';
+
+html {
+    font: 22px/1.5 'Kode Mono', sans-serif;
+    background-color: #C1BDBA;
+    box-sizing: border-box;
+    color: #fff;
+    /* margin: 0;
+    padding: 0; */
+}
+
+html *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+input, button {
+    font: inherit;
+    box-sizing: inherit;
+}
+
+input {
+    background-color: inherit;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+
+}
+
+input, label, .inactive-button {
+    color: #aaa;
+}
+
+
+body {
+    padding: 3em;
+}
+
+form {
+    background-color: #24333C;
+    max-width: 750px;
+    margin: auto;
+    padding: 2em;
+}
+
+nav {
+    display: flex;
+}
+
+button {
+    border-radius: 0;
+    background-color: #1AB188;
+    color: #fff;
+    border: none;
+    padding: 1em;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.inactive-button {
+    background-color: #435359;
+    
+}
+
+.big-button p {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+header {
+    text-align: center;
+    margin: 2.5em auto;
+}
+
+div.fullname {
+    display: flex;
+    gap: 1em;
+}
+
+.input-wrapper {
+    position: relative;
+    flex-grow: 1;
+    margin-bottom: 2em;
+    
+}
+
+.input-wrapper input {
+    position: absolute;
+    top: -0.3em;
+    bottom: -0.1em;
+    left: -0.7em;
+}
