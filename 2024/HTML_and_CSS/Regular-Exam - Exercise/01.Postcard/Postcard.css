@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap);
+
+*, * *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font: 18px/1.15 'Gochi Hand', sans-serif;
+    background-color: #E0E0E0;
+    color: #333333;
+}
+
+p {
+    opacity: 0.7;
+}
+
+h1 {font-size: 1.3rem}
+h2 {font-size: 1.25rem}
+h3 {font-size: 1.2rem}
+h4 {font-size: 1.15rem}
+h5 {font-size: 1.1rem}
+h6 {font-size: 1rem}
+
+body {
+    max-width: 1000px;
+    margin: 25px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #CCCCCC;
+}
+
+section.card {
+    margin: 20px;
+    background-image: url('01.Postcard_Resources/images/nature.jpg');
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-bottom: 56.25%; 
+    position: relative;
+    overflow: hidden;
+}
+
+section.card article.message {
+    background-color: #fff;
+    padding: 1em 1em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 15px;
+    margin: 25px;
+    margin-bottom: 12.5px;
+    text-align: center;
+}
+
+section.card article.message h1 {
+    padding-bottom: 0.5em;
+}
+
+section.details {
+    background-color: #F9F9F9;
+    border-top: 1px solid #CCCCCC;
+    padding: 1.5em 2em;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+section.details h1 {
+    padding-bottom: 1em;
+}
+
+section.details p {
+    padding-bottom: 0.5em;
+}

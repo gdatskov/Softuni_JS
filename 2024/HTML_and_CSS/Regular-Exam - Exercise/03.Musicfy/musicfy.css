@@ -1,0 +1,264 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+*, * *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font: 18px/1.4 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat';
+}
+
+.logo img {
+    height: 4em;
+}
+
+.logo span {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    align-self: center;
+    /* font-size: 1.5em; */
+    font-weight: bold;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 1.5em;
+}
+
+nav li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section.plans-section {
+    text-align: center;
+}
+
+section.plans-section ul * {
+    text-align: left;
+}
+
+div.plans {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10%;
+}
+
+.plans-section > *:first-child {
+    padding: 1.5em;
+    text-align: center;
+    color: #fff;
+}
+
+.plans-section {
+    position: relative;
+    margin-bottom: 7em;
+}
+
+.plans-section::before {
+    content: '';
+    background-color: #1DB954;
+    display: block;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+.plans-section::after {
+    content: '';
+    background-image: url('./03.Musicfy_Resources/images/music.png');
+    background-size: cover;
+    display: block;
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    top: 5%;
+    z-index: -50;
+}
+
+
+article.plan-details {
+    box-shadow: 0 0 5px 0;
+    border-radius: 0.5em;
+    max-width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+    background-color: #fff;
+}
+
+article.plan-details > *:first-child {
+    padding: 1em;
+    opacity: 70%;
+    text-align: center;
+
+}
+
+article.plan-details ul {
+    padding: 0 15%;
+    list-style: circle;
+    opacity: 70%;
+
+}
+
+
+article.plan-details li+li {
+    list-style: circle;
+    margin: 0.5em 0;
+}
+
+article.plan-details button {
+    margin-bottom: 1em;
+    padding: 0 4em;
+    box-sizing: inline-size;
+    align-self: center;
+    height: 46px;
+    border-radius: 23px;
+    color: #fff;
+    background-color: #1DB954;
+    font-weight: bold;
+    border: none;
+}
+
+div.pricing {
+    display: flex;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+div.pricing * {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 1.3em;
+    margin: 0.5em 0em;
+    padding: 0.5em 0.5em;
+}
+
+div.pricing > *:not(:first-child) {
+    border-left: 1px solid #fff;
+}
+
+section.dogopal {
+    display: flex;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+.dogopal-text {
+    margin-right: 5%;
+    padding: 1em;
+    flex: 7
+}
+
+.dogopal-image {
+    flex: 3
+}
+
+.dogopal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.dogopal-text * + * {
+    margin: 1em 0;
+}
+
+.dogopal-text p {
+    margin-right: 5em;
+}
+
+.dogopal-text h3 {
+    font-size: 1.3em;
+}
+
+/* section.differences *:not(table):not(table *) {
+    text-align: center;
+} */
+
+section.differences {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+section.differences h1 {
+    font-size: 3em;
+}
+
+section.differences p {
+    margin: 1em;
+}
+
+section.differences table {
+    width: 60%;
+    border-radius: 15px;
+    background-color: #fff;
+    overflow: hidden;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+section.differences table tr {
+    display: flex;
+    padding: 1em;
+}
+
+section.differences table tr td:nth-child(1){
+    flex-basis: 70%;
+    text-align: left;
+    align-self: center;
+}
+section.differences table tr td:nth-child(2){
+    flex-basis: 15%;
+}
+section.differences table tr td:nth-child(3){
+    flex-basis: 15%;
+}
+
+section.differences table tr:nth-child(odd) {
+    background-color: #CCCBCB;
+}
+
+section.differences table tr:nth-child(even) {
+    background-color:#81D8A0 ;
+}
+
+section.differences table img{
+    scale: 1.25;
+}
+
+footer {
+    background-color: #191414;
+    color: #fff;
+    text-align: center;
+    padding: 2em;
+}
+
+
+
+
+

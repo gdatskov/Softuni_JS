@@ -1,0 +1,60 @@
+@media (max-width: 600px) {
+    header {
+        padding: 0.5em;
+    }
+    
+    header nav {
+        margin-top: 0em;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .header-title {
+        padding: 0.5em;
+    }
+
+    header nav ul li a {
+        font-size: 12px;
+    }
+
+    .header-title h1 {
+        font-size: 35px;
+    }
+
+    .our-dogs ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+    
+    .our-dogs ul li {
+        flex: 1 1 calc(50% - 1em);
+        max-width: calc(50% - 1em);
+    }
+    
+    .our-dogs ul li img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .our-dogs ul li > p {
+        margin-bottom: 1em;
+    }
+
+    .helpNeed ul {
+        flex-direction: column;
+    }
+
+    .helpNeed li h4 {
+        margin-top: 0.5em;
+        padding-bottom: 2em;
+    }
+
+    .helpNeed {
+        padding-bottom: 0;
+    }
+
+
+}
