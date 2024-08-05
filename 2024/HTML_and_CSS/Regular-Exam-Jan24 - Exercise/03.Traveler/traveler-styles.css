@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+
+*, * *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+p.test1 {
+    margin-top: 500px;
+    font: 14px/1.2 "Karla";
+}
+
+p.test2 {
+    font: 14px/1.2 "Cormorant Infant";
+}
+
+
+html {
+    font: 18px/1.4 'Karla';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding: 1em 5%;
+}
+
+nav li {
+    list-style: none outside;
+}
+
+nav ul {
+    display: flex;
+    margin-left: auto;
+    gap: 3em;
+}
+
+.logo img {
+    width: 110px;
+}
+
+.logo span {
+    display: none;
+}
+
+section.site-banner {
+    position: relative;
+    background-image: url('./03.Traveler_Resources/images/poster.jpg');
+    background-size: cover; 
+    background-position: center 15%;
+    background-repeat: no-repeat;
+    color: #fff;
+    z-index: -2;
+}
+
+section.site-banner::before {
+    content: '';
+    background-color: #000;
+    opacity: 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+
+section.site-banner li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bolder;
+    opacity: 80%;
+}
+
+header h1 {
+    font: 90px/1.2 "Cormorant Infant";
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 15%;
+}
+
+header p {
+    text-align: center;
+    padding: 10% 35%;
+    opacity: 80%;
+}
+
+section.testimonial {
+    background-color: #F8F0E9;
+
+}
+
+article.customer {
+    opacity: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 12%;
+    font-size: larger;
+}
+
+article.customer p {
+    padding: 0.5em 150px;
+    
+}
+
+article .customer-testimonial {
+    font: 90px/0.8 "Cormorant Infant";
+    font-weight: 900;
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 0.5em;
+}

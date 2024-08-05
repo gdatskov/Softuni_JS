@@ -1,0 +1,52 @@
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        font-size: 1.1em;
+    }
+
+    div.pair {
+        flex-direction: column;
+    }
+
+    .planet {
+        width: 100%;
+    }
+
+    .planet img {
+        flex: 1 1 60%;
+        align-self: center;
+    }
+
+    .planet .planet_info {
+        flex: 1 1 40%;
+        text-align: center;
+    }
+
+    .news ul {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+    
+    .news li {
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .news li .link {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .primary header nav a:nth-child(2), 
+    .primary footer nav a:nth-child(2n) {
+        border-left: none;
+        border-right: none;
+    }
+}
