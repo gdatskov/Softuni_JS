@@ -26,8 +26,5 @@ function attachEventsListeners() {
             outputValueElement.value = convertMetersToSelected;
         }
     )
-
-    
-
 }
 
