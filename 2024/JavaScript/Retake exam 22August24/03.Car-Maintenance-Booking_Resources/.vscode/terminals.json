@@ -1,0 +1,33 @@
+{
+  "autorun": false,
+  "autokill": true,
+  "terminals": [
+    {
+      "name": "Task",
+      "open": true,
+      "commands": [
+        "npm install",
+        "npm start" 
+      ],
+      "execute": true
+    },
+    {
+      "name": "Server",
+      "open": true,
+      "commands": [
+        "cd ..\\server",
+        "node server"
+
+      ],
+      "execute": true
+    },
+    {
+      "name": "Test",
+      "open": false,
+      "commands": [
+        "cd tests"
+      ],
+      "execute": true
+    }
+  ]
+}
